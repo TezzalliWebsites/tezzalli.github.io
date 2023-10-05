@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link de bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- link para los iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <!-- Link para fuente de letras  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alumni Sans Pinstripe"
+      rel="stylesheet"
+    />
+    <title>Tezzalli</title>
+    <style>
+      /* Estilo personalizado para las imágenes en los cards */
+      .card-img-custom {
+        width: 15rem;
+        height: 20rem;
+      }
+      /* Estilo personalizado para el footer */
+      footer {
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+      }
+      .footer-link {
+        color: white;
+      }
+      .footer-link:hover {
+        text-decoration: none;
+      }
+      .footer-icons {
+        font-size: 36px;
+        margin-right: 10px;
+        color: #ccd7e3;
+      }
+      .footer-input-group {
+        display: flex;
+      }
+      .footer-input {
+        flex: 1;
+        margin-right: 10px;
+      }
+      .tittle-5 {
+        font-size: 4rem;
+      }
+      /* Estilo para la fuente que tendra texto de la pagina  */
+      p {
+        font-family: "Alumni Sans Pinstripe";
+        font-size: 2rem;
+        word-spacing: 0.2rem;
+        line-height: 1.8rem;
+      }
+      /* Estilo para el texto en las cards  */
+      .card-text {
+        font-size: 1rem;
+        word-spacing: 0.2rem;
+        line-height: 1.8rem;
+      }
+      /* Estilo para titulo 1 */
+      .tittle-1 {
+        font-size: 3rem;
+      }
+      /* Estilo para el texto de hint (placeholder) */
+      input::placeholder {
+        color: white; /* Cambia el color del texto de hint */
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- banner superior -->
+    <div
+      class="container-fluid"
+      style="background-color: black; text-align: center; padding: 1rem"
+    >
+      <a class="navbar-brand" href="#" style="color: azure">
+        Shipping Mexico and USA
+      </a>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Logo de la empresa en la parte izquierda -->
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./assets/img/logo.png"
+            alt="Logo de la empresa"
+            width="60"
+            height="45"
+        /></a>
+
+        <!-- Botones de navegación en el centro -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EVENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TEZALLI WOMEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LOG IN</a>
+          </li>
+        </ul>
+
+        <!-- Iconos en la esquina derecha -->
+        <div class="navbar-nav">
+          <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+          <!-- Icono de carrito (puedes reemplazar "bi bi-cart" con la clase CSS de tu icono) -->
+          <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+          <!-- Icono de lupa (puedes reemplazar "bi bi-search" con la clase CSS de tu icono) -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Primera sección con imagen y texto -->
+    <section class="container mt-5">
+      <div class="row" style="text-align: center">
+        <!-- Imagen que abarca el 70% -->
+        <div class="col-md-8">
+          <img src="./assets/img/img1.png" alt="Imagen" class="img-fluid" />
+        </div>
+
+        <!-- Texto en el 30% restante -->
+        <div class="col-md-4">
+          <img
+            src="./assets/img/img2.png"
+            alt="Imagen"
+            class="img-fluid mt-5"
+          /><br /><br />
+          <p>A fashion hub for the discerning Latin American Woman</p>
+          <br />
+          <br />
+          <a href="#" class="btn btn-light">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Today I took the luxury of saying yes! -->
+    <section class="container mt-5">
+      <div class="row justify-content-md-center">
+        <div class="col-md-10 text-center">
+          <h2 class="tittle-1">Today I took the luxury of saying yes!</h2>
+          <p class="text-justify">
+            We provide our clients with the exclusivity of products belonging to
+            honest brands that seek to generate sensitivity to the environment,
+            increasing the respect and empathy of our community with Mother
+            Earth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion About Tezzalli -->
+    <section class="container mt-5">
+      <div class="row" style="text-align: justify">
+        <div class="col-md-12">
+          <h2 class="text-center tittle-1">About Tezzalli</h2>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row" style="text-align: justify">
+        <!-- Texto que abarca el 70% aprox-->
+        <div class="col-md-7">
+          <br />
+          <p>
+            Tezzalli was founded in 2022 by <a href=""> Mani Agrawal</a> with
+            the goal of catering to consumers of the burgeoning cosmetics
+            industry of Latin America, a market segment that we believe
+            traditionally has been underserved by the larger cosmetics
+            manufacturers like L'Oréal and Unilever. Historically, these
+            manufacturers have focused on the 10th of the global population
+            which is exclusive of those of varied racial heritages.
+          </p>
+          <p>
+            According to IMF estimates, the current population of Latin America
+            is 650.75 million. This represents about 8.28% of the total global
+            population. Considering Latin American population size and projected
+            growth, and the continuing positive growth trend of those moving up
+            the socioeconomic ladder into middle-class status, we firmly believe
+            that the Latin American market represents a golden opportunity for
+            strategic growth and development. We expect to see record gains
+            within all cosmetic segments, particularly in sun protection and
+            anti-aging products, and are strategically positioning Tezzalli to
+            capitalize on these growth opportunities.
+          </p>
+          <p>
+            In addition to our globally sourced offerings on Tezzalli.mx, we are
+            thrilled to announce the creation of our exclusive Tezzalli Perla
+            cosmetics line, debuting in November of 2023 with three exceptional
+            products on offer: a Serum, Facial Cream, and SPF 50 Sunscreen.
+          </p>
+        </div>
+
+        <!-- Imagen en el 30% restante -->
+        <div class="col-md-5">
+          <img src="./assets/img/img3.png" alt="Imagen" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Linea Perla -->
+    <section class="container mt-5">
+      <div class="row justify-content-md-center">
+        <div class="col-md-10 text-center">
+          <h2 class="tittle-1">Linea Perla</h2>
+          <p class="text-justify">
+            The launch of these three products is just the beginning! We are
+            thrilled to share that we have an exciting array of additional
+            products currently in development targeted for release in the near
+            future.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="background-color: #ccd7e3">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/img4.png"
+              class="card-img-custom card-img-top"
+              alt="Imagen 1"
+            />
+            <div class="card-body">
+              <h5 class="card-tittle">EL SUERO</h5>
+              <p class="card-text">
+                Serum de perla + ácido hialurónico, 30 Mililitro
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/img4.png"
+              class="card-img-custom card-img-top"
+              alt="Imagen 2"
+            />
+            <div class="card-body">
+              <h5 class="card-tittle">LA CREMA FACIAL</h5>
+              <p class="card-text">
+                Crema de perla + retinol + colágeno, 60 Mililitro
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/img4.png"
+              class="card-img-custom card-img-top"
+              alt="Imagen 3"
+            />
+            <div class="card-body">
+              <h5 class="card-tittle">EL PROTECTOR SOLAR</h5>
+              <p class="card-text">
+                Protector solar en crema ultra ligera libre de aceite + perla
+                FPS 50, 60 Mililitro
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección The Tezzalli cosmetics brand value proposition: -->
+    <section class="container mt-5">
+      <div class="row" style="text-align: justify">
+        <div class="col-md-12">
+          <h2 class="text-center tittle-1">The Tezzalli cosmetics</h2>
+
+          <h2 class="text-center tittle-1">brand value proposition:</h2>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row" style="text-align: center">
+        <div class="col-md-2"></div>
+        <!-- imagen con texto 1 -->
+        <div class="col-md-4">
+          <img src="./assets/img/img5.png" alt="Imagen" class="img-fluid" />
+          <p>
+            To offer cosmetics products that cater to people of brown skin
+            tones.
+          </p>
+        </div>
+        <!-- un espacio entre ambos  -->
+        <!-- <div class="col-md-1"></div> -->
+        <!-- imagen con texto 2 -->
+        <div class="col-md-4">
+          <img src="./assets/img/img6.png" alt="Imagen" class="img-fluid" />
+          <p>
+            To offer top-shelf, no-compromise, premium cosmetics products at
+            economical prices.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row justify-content-md-center" style="text-align: justify">
+        <div class="col-md-10">
+          <p>
+            Mexico is a land of magical rituals and traditions gifted to us by
+            our ancestors, The oldest beauty secrets of the gods were in common
+            usage by the past civilizations. These secrets have since been lost
+            to modern consumers. Tezzalli serves as the portal transporting the
+            beauty secrets of the ancient world into the modern world.
+          </p>
+          <p>
+            If you too are as excited as we are about the growth potential of
+            the Latin American cosmetics segment and about the unique Tezzalli
+            value proposition, we would like to invite you to help us make a
+            difference and consider the prospect of becoming a Tezzalli investor
+            or distributor. <a href="">Click here</a> to contact us.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion de the tezzzalli website -->
+    <section class="container mt-5">
+      <div class="row" style="text-align: center">
+        <!-- Imagen que abarca el 70% -->
+        <div class="col-md-8">
+          <img src="./assets/img/img7.png" alt="Imagen" class="img-fluid" />
+        </div>
+        <!-- Texto en el 30% restante -->
+        <div class="col-md-4 mt-5">
+          <h2 style="text-align: justify" class="tittle-5 mt-5">
+            The Tezzalli
+          </h2>
+          <h2 style="text-align: justify" class="tittle-5">website</h2>
+          <br />
+          <p style="text-align: justify">
+            Tezzalli.mx is an online interactive “fashionista” platform and
+            thoughtfully curated store that caters to the discerning modern
+            Latin American woman who is looking for new tools to help her reveal
+            her most beautiful self.
+          </p>
+          <a
+            href="#"
+            class="btn"
+            style="
+              background-color: #8dabcf;
+              color: aliceblue;
+              font-size: 1.6rem;
+            "
+            >Visit Tezzalli.mx</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion de conoce Epy! -->
+    <section class="container mt-5">
+      <div class="row" style="text-align: center">
+        <!-- div que abarca el 70% -->
+        <div class="col-md-7 mt-5">
+          <h2 style="text-align: justify" class="tittle-5 mt-5">Meet Epy!</h2>
+          <p style="text-align: justify" class="mt-5">
+            We're absolutely smitten with Epy! In fact, we're so enamored that
+            we've designed a website (complete with a beauty-focused AI engine
+            you can interact with) just for him so anyone can visit and learn
+            more about him and his distinguished history.
+          </p>
+          <a
+            href="#"
+            class="btn text-button"
+            style="
+              background-color: #8dabcf;
+              color: aliceblue;
+              font-size: 1.6rem;
+            "
+            >Visit Epy here!</a
+          >
+        </div>
+
+        <!-- div que abarca el 30%  -->
+        <div class="col-md-5">
+          <img src="./assets/img/img8.png" alt="Imagen" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Primera columna -->
+          <div class="col-md-4">
+            <a href="#" class="footer-link">HOME</a><br /><br />
+            <a href="#" class="footer-link">PRODUCTS</a><br /><br />
+            <a href="#" class="footer-link">CONTACT US</a><br /><br />
+            <a href="#" class="footer-link">EVENTS</a><br /><br />
+            <a href="#" class="footer-link">TEZALLI SELLERS</a><br /><br />
+            <p>
+              Déjanos tu correo y entérate de todos los lanzamientos de
+              productos más recientes, ofertas limitadas, información de eventos
+              en la tienda, etc.
+            </p>
+            <div class="footer-input-group mt-3">
+              <input
+                type="email"
+                class="form-control footer-input;"
+                placeholder="Your email"
+                style="background-color: black; color: white"
+                hint="asd"
+              />
+              <button class="btn btn-light">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Segunda columna -->
+          <div class="col-md-4">
+            <h4>Políticas y Condiciones</h4>
+            <p>Privacy politics</p>
+            <p>Terms and conditions</p>
+            <small>Tezzalli, SAPI de CV © Derechos reservados de autor.</small>
+          </div>
+
+          <!-- Tercera columna -->
+          <div class="col-md-4 text-right">
+            <a href="#"><i class="fa-brands fa-facebook-f footer-icons"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram footer-icons"></i></a>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin-in footer-icons"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <!-- script para los iconos -->
+    <script
+      src="https://kit.fontawesome.com/3218ad46bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
